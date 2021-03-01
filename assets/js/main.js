@@ -101,10 +101,9 @@ var game = {
         game.wrongAnswers = 0;
         game.rightAnswers = 0;
         game.questionChooser();
-        $(".try-again").text("")
-        $(".answersRight").text("")
-        $(".answersWrong").text("")
-        $(".giphy-sticker").attr("src", "https://giphy.com/embed/YCAZI58mofD6E");
+        $(".try-again").text("");
+        $(".answersRight").text("");
+        $(".answersWrong").text("");
     },
     // This is used to display the questions
     // For game.questions array if the game.stage is equal to the stage of game.questions[i], than display the questions.
@@ -112,13 +111,13 @@ var game = {
     questionChooser: function () {
         for (i = 0; i < game.questions.length; i++) {
             if (game.stage === game.questions[i].stage) {
-                $(".start").text("")
-                $("#gifsGoHere").html("")
-                $("#question").text(game.questions[i].question)
-                $("#aAnswer").text(game.questions[i].answers[0])
-                $("#bAnswer").text(game.questions[i].answers[1])
-                $("#cAnswer").text(game.questions[i].answers[2])
-                $("#dAnswer").text(game.questions[i].answers[3])
+                $(".start").text("");
+                $("#gifsGoHere").html("");
+                $("#question").text(game.questions[i].question);
+                $("#aAnswer").text(game.questions[i].answers[0]);
+                $("#bAnswer").text(game.questions[i].answers[1]);
+                $("#cAnswer").text(game.questions[i].answers[2]);
+                $("#dAnswer").text(game.questions[i].answers[3]);
             }
         }
     },
@@ -129,16 +128,19 @@ var game = {
     checkAnswer: function () {
         for (i = 0; i < game.questions.length; i++) {
             if (game.chosen === game.questions[i].correctAnswer && game.stage === game.questions[i].stage) {
+                game.time = 5;
                 game.stage++;
                 game.rightAnswers++;
                 game.chosen = "";
-                $("#gifsGoHere").html("<iframe src='https://giphy.com/embed/SHaQMBLjK6MvK' width='480' height='326' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>")
+                $("#question").text(`You got that Right!`);
+                $(".answer").text("");
+                $("#gifsGoHere").html("<iframe src='https://giphy.com/embed/SHaQMBLjK6MvK' width='480' height='326' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>");
                 setTimeout(function() {
                     game.questionChooser();
                     game.timerReset();
                 }, 5000)
                 
-                console.log("Right Answers So Far " + game.rightAnswers)
+                console.log("Right Answers So Far " + game.rightAnswers);
             }
         }
     },
@@ -177,7 +179,7 @@ var game = {
     count: function () {
         if (game.time > 0 && game.clockRunning === true) {
             game.time--;
-            $("#time").text(`${game.time} Seconds Left`)
+            $("#time").text(`${game.time} Seconds Left`);
         }
 
         if (game.time === 0 && game.clockRunning === true) {
@@ -199,7 +201,7 @@ var game = {
         $(".answer").text("");
         $("#question").text("");
         $(".question-background").css("background", "rgba(0,0,0,0)");
-        $(".try-again").text("Try Again?")
+        $(".try-again").text("Try Again?");
         $(".answersRight").text(`You Got ${game.rightAnswers} Right!`)
         $(".answersWrong").text(`You Got ${game.wrongAnswers} Wrong!`)
         clearInterval(intervalId);
