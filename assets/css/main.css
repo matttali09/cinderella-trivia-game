@@ -1,6 +1,7 @@
 /* global */
 body {
-    background: url("../images/background.jpg");
+    background: url("../images/background.jpg") no-repeat center fixed;
+    background-size: 100vw 100vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -8,6 +9,12 @@ body {
 #timer {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+/* GIFY Images */
+.giphy-embed {
+  width:auto;
+  height: 10rem;
 }
   /* START BUTTON  */
 /*<==================>*/
@@ -84,7 +91,6 @@ body {
   }
   .bounce {
     display: block;
-    vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
