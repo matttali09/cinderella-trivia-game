@@ -134,7 +134,7 @@ var game = {
                 game.chosen = "";
                 $("#question").text(`You got that Right!`);
                 $(".answer").text("");
-                $("#gifsGoHere").html("<iframe src='https://giphy.com/embed/SHaQMBLjK6MvK' width='480' height='326' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>");
+                $("#gifsGoHere").html("<img src='./assets/images/Cinderella-Carriage.gif' class='giphy-embed'/>");
                 setTimeout(function() {
                     game.questionChooser();
                     game.timerReset();

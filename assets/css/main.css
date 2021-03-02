@@ -13,7 +13,7 @@ body {
 
 /* GIFY Images */
 .giphy-embed {
-  width:auto;
+  width: auto;
   height: 10rem;
 }
   /* START BUTTON  */
@@ -25,15 +25,17 @@ body {
     margin: 0 auto;
     border-radius: 10px;
 }
-
 .start:hover {
     background: rgb(204,0,255);
 }
+
+.header-background {
+  background: rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  margin: auto;
+}
 .question-background {
     background: rgba(0,0,0,0)
-}
-.questions {
-    color: white;
 }
 
 .try-again {
