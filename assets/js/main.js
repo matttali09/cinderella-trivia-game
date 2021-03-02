@@ -213,14 +213,14 @@ var game = {
 
 // When the user clicks the start button than start the game and start the timer
 $(".start").on("click", function () {
-    $(".question-background").css("background", "rgba(0,0,0,0.8)")
+    $(".question-background").css("background", "rgba(0,0,0,0.5)")
     game.startGame();
     game.timer();
     game.count();
 })
 // When the user clicks the try again button than reset the game and start again
 $(".try-again").on("click", function () {
-    $(".question-background").css("background", "rgba(0,0,0,0.8)")
+    $(".question-background").css("background", "rgba(0,0,0,0.5)")
     game.startGame();
     game.timer();
     game.count();

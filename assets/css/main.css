@@ -30,9 +30,9 @@ body {
 }
 
 .header-background {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   width: fit-content;
-  margin: auto;
+  margin: 10px auto;
 }
 .question-background {
     background: rgba(0,0,0,0)
