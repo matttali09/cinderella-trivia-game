@@ -22,27 +22,27 @@ body {
     background: rgb(133,0,255);
     border: 2px solid lightblue;
     width: 300px;
-    margin: 0 auto;
+    margin: 2rem auto;
     border-radius: 10px;
 }
 .start:hover {
     background: rgb(204,0,255);
 }
 
-.header-background {
+.header-background, .right-wrong-display, .question-background {
   background: rgba(0, 0, 0, 0.3);
   width: fit-content;
-  margin: 10px auto;
+  margin: 1rem auto;
 }
 .question-background {
-    background: rgba(0,0,0,0)
+  margin: 0.3rem auto;
 }
 
 .try-again {
     background: rgb(133,0,255);
     border: 2px solid lightblue;
     width: 300px;
-    margin: 0 auto;
+    margin: 2rem auto;
     border-radius: 10px;
 }
 

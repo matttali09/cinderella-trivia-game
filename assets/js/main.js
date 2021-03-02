@@ -135,10 +135,17 @@ var game = {
                 $("#question").text(`You got that Right!`);
                 $(".answer").text("");
                 $("#gifsGoHere").html("<img src='./assets/images/Cinderella-Carriage.gif' class='giphy-embed'/>");
-                setTimeout(function() {
-                    game.questionChooser();
-                    game.timerReset();
-                }, 5000)
+                if (game.stage !== 11) {
+                    console.log("THIS RAN");
+                    console.log(game.stage);
+                    setTimeout(function() {
+                        game.questionChooser();
+                        game.timerReset();
+                    }, 5000)
+                } else {
+                    console.log("THIS RAN end");
+                    clearInterval(intervalId);
+                }
                 
                 console.log("Right Answers So Far " + game.rightAnswers);
             }
