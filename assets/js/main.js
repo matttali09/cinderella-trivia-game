@@ -78,7 +78,127 @@ var game = {
             answers: ["Major", "Maximus", "Pierre", "Sampson"],
             correctAnswer: "Major",
             key: 10
-        }
+        },
+        question11 = {
+            question: "Whose room does Lucifer sleep in?",
+            answers: ["Drizella", "Lady Tremaine", "Anastasia", "Cinderella"],
+            correctAnswer: "Lady Tremaine",
+            key: 11
+        },
+        question12 = {
+            question: "When Walt was asked what his favorite scene from an animated film was, which scene from Cinderella did he choose?",
+            answers: ["The dress transformation in the garden", 'The bubbles in "Oh Sing Sweet Nightingale"', "When Cinderella pulls out the other slipper", "When Prince Charming sees Cinderella for the first time"],
+            correctAnswer: "The dress transformation in the garden",
+            key: 12
+        },
+        question13 = {
+            question: "What was the first year Cinderella was released on video?",
+            answers: ["1986", "1987", "1988", "1989"],
+            correctAnswer: "1988",
+            key: 13
+        },
+        question14 = {
+            question: "The Disney version of the Cinderella story is mostly inspired by what tale?",
+            answers: ["Cenerentola, by Basile", "Aschenputtel, by the Brothers Grimm", "The Slipper and the Rose, by the Sherman Brothers", "Cendrillon, by Perrault"],
+            correctAnswer: "Cendrillon, by Perrault",
+            key: 14
+        },
+        question15 = {
+            question: 'When her daughters start fighting after the music lesson, their mother reminds them, "Above all..."',
+            answers: ["Etiquette", "Self-Control", "Cleanliness", "Politeness"],
+            correctAnswer: "Self-Control",
+            key: 15
+        },
+        question16 = {
+            question: "What time does the clock chime wake up Cinderella?",
+            answers: ["4", "5", "6", "7"],
+            correctAnswer: "6",
+            key: 16
+        },
+        question17 = {
+            question: "Where was Cinderella forced to sleep once her stepmother took over the chateau?",
+            answers: ["The cellar", "The kitchen", "The barn", "The tower"],
+            correctAnswer: "The tower",
+            key: 17
+        },
+        question18 = {
+            question: "After Cinderella opens the mousetrap, what does Gus do when Jaq approaches him?",
+            answers: ["Tries to tickle him", "Tries to fight him", "Tries to hug him", "Tries to run from him"],
+            correctAnswer: "6Tries to fight him",
+            key: 18
+        },
+        question19 = {
+            question: "How many times does Cinderella lose a shoe?",
+            answers: ["1", "2", "3", "4"],
+            correctAnswer: "3",
+            key: 19
+        },
+        question20 = {
+            question: "When does Drizella tell Cinderella to have her ironing done?",
+            answers: ["In 1 hour", "By the end of the day", "By lunch", "By tomorrow morning"],
+            correctAnswer: "In 1 hour",
+            key: 20
+        },
+        question21 = {
+            question: "How many of Walt's Nine Old Men worked on Cinderella?",
+            answers: ["None", "2", "8", "9"],
+            correctAnswer: "9",
+            key: 21
+        },
+        question22 = {
+            question: "Which of these is not the name of a young lady Prince Charming meets at the ball?",
+            answers: ["Princess Frederica Janie De la Fontain", "Mademoiselle Juliette Marie de la Rinaldi", "Mademoiselle Augustina DuBois", "Mademoiselle Lenora Mercedes De la Tour"],
+            correctAnswer: "Mademoiselle Juliette Marie de la Rinaldi",
+            key: 22
+        },
+        question23 = {
+            question: "The family receives the invitation to the ball that is taking place how soon?",
+            answers: ["That night", "The next night", "The following week", "A fortnight"],
+            correctAnswer: "That night",
+            key: 23
+        },
+        question24 = {
+            question: 'When Cinderella is singing "Oh Sing Sweet Nightingale" what shakes her from her daydream?',
+            answers: ["A knock at the door", "Lucifer", "Her stepmother", "The birds"],
+            correctAnswer: "Lucifer",
+            key: 24
+        },
+        question25 = {
+            question: "What is the right color combination of sash and beads that the mice take from the stepsisters?",
+            answers: ["Blue beads, pink sash", "White beads, pink sash", "Blue beads, blue sash", "Pink beads, blue sash"],
+            correctAnswer: "Blue beads, pink sash",
+            key: 25
+        },
+        question26 = {
+            question: "What does Gus shout when Cinderella walks in to her room and sees the dress the mice have made over?",
+            answers: ["Merry Christmas!", "Happy Birthday!", "Surprise!", "Congratulations!"],
+            correctAnswer: "Happy Birthday!",
+            key: 26
+        },
+        question27 = {
+            question: 'Complete the quote: "Even miracles..."',
+            answers: ["Are worth the wait", "Can happen to you", "Take a little time", "Happen everyday"],
+            correctAnswer: "Take a little time",
+            key: 27
+        },
+        question28 = {
+            question: "The father of the prince wants the prince to find what?",
+            answers: ["His missing gold", "A wife", "A New Horse", "A new house"],
+            correctAnswer: "A wife",
+            key: 28
+        },
+        question29 = {
+            question: "What is the name of the mouse that is found in the mouse trap?",
+            answers: ["Bob Bob", "Mel Mel", "Gus Gus", "Tom Tom"],
+            correctAnswer: "Gus Gus",
+            key: 29
+        },
+        question30 = {
+            question: "When Cinderella comes downstairs in her dress for the ball, what do the stepsisters do?",
+            answers: ["Go upstairs and change dresses", "Tell her she looks horrible", "Run out the door", "Rip her dress to shreds"],
+            correctAnswer: "Rip her dress to shreds",
+            key: 30
+        },
     ],
 
 
@@ -119,9 +239,9 @@ var game = {
     },
     // This is used to display the questions
     questionChooser: function () {
-        let randomChoice = Math.floor(Math.random() * 10);
+        let randomChoice = Math.floor(Math.random() * 30);
         while (game.chosenQuestions.includes(randomChoice)) {
-            randomChoice = Math.floor(Math.random() * 10);
+            randomChoice = Math.floor(Math.random() * 30);
         }
         console.log("randomChoice")
         console.log(randomChoice)
